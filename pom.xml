@@ -3,14 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>pgl.LAW</groupId>
-        <artifactId>LAW</artifactId>
-        <version>1.0-SNAPSHOT</version>
-    </parent>
 
-    <groupId>pgl.LAW.practice</groupId>
+    <groupId>pgl.practice</groupId>
     <artifactId>practice</artifactId>
+    <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -65,6 +61,16 @@
 
     <dependencies>
         <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>pgl</groupId>
+            <artifactId>TIGER</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>23.0.1</version>
@@ -73,12 +79,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.33</version>
-        </dependency>
-        <dependency>
-            <groupId>pgl.LAW.V4DB</groupId>
-            <artifactId>V4DB</artifactId>
-            <version>1.0-SNAPSHOT</version>
-            <scope>compile</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
